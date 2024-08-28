@@ -1,0 +1,788 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+    height: 70px; 
+}
+
+section nav .logo img{
+    width: 60px; 
+    height: auto; 
+    cursor: pointer;
+    margin: 7px 0;
+}
+
+section nav ul {
+    list-style: none;
+}
+
+section nav ul li {
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+section nav ul li a {
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 17px ;
+    position: relative; 
+    transition: 0.1s;
+}
+
+section nav ul li a:after {
+    content: ''; 
+    width: 0;
+    height: 2px; 
+    background: #fac031;
+    position: absolute; 
+    bottom: -5px; 
+    left: 0;
+    transition: width 0.2s linear;
+}
+
+section nav ul li a:hover:after {
+    width: 100%; /* Lebarkan garis saat hover */
+}
+
+section nav ul li a:hover {
+    color: #fac031;
+}
+
+section nav .icon i {
+    font-size: 15px;
+    color: black;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section nav .icon i:hover {
+    color: #fac031;
+}
+
+section .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 0; 
+}
+
+section .main .men_text h1 {
+    font-size: 60px;
+    position: relative;
+    top: -90px;
+    left: 20px;
+}
+
+.burger-img {
+    position: absolute;
+    top: 0; 
+    left: 20px; 
+}
+
+section .main .men_text h1 span{
+    margin-left: 15px ;
+    color: #fac031;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+}
+
+#bb{
+    margin-left: 2px ;
+    color: #095f15;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+}
+
+section p {
+    width: 680px;
+    text-align: center;
+    position: relative;
+    left: 80px;
+    bottom: 300px;
+    line-height: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #3d3d3d;
+}
+
+section .main-btn {
+    background: #fac031;
+    position: relative;
+    left: 100px;
+    bottom: 240px;
+    width: 150px;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+section .main-btn:hover {
+    background: rgb(255, 253, 106);
+}
+
+section .main-btn:active{
+    background: #fce0878e;
+}
+
+section .main-btn:hover a {
+    color: #a35c00;
+
+}
+
+section .main-btn a{
+    font-family: 'Montserrat';
+    color: #fff;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+section .main-btn i {
+    color: #fff;
+    transition: 0.3s;
+}
+
+section .main-btn:hover i{
+    transform: translate(7px);
+    color: black;
+} 
+
+/* about */
+
+.about {
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+    position: relative;
+    bottom: 180px;
+}
+
+.about .about_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.about .about_main .image img {
+    width: 500px;
+    position: relative;
+    top: 60px;
+}
+
+.about .about_main .about_text h1 span {
+    color: #fac031;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+
+.about .about_main .about_text h1 {
+    font-size: 55px;
+    position: relative;
+    bottom: 40px;
+    font-family: cursive;
+}
+
+.about .about_main .about_text h3 {
+    font-size: 30px;
+    margin: 0 0 50px 0;
+}
+
+.about .about_main .about_text p {
+    width: 650px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 22px;
+}
+
+.about .about_btn{
+    background: #ffffff;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+    left: 45%;
+    bottom: 50px;
+    font-family: 'Montserrat';
+    border: 1px solid;
+    
+}
+
+/* Menu */
+
+.menu{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.menu h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-family: cursive;
+}
+
+.menu h1 span{
+    color: #fac031;
+    margin-left: 15px;
+    font-family: mv boli;
+
+}
+
+.menu h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.menu .menu_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.menu_card{
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.menu .menu_box .menu_card{
+    width: 100%; 
+    max-width: 325px; 
+    height: 490px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-sizing: border-box; 
+}
+
+
+.menu .menu_box .menu_card .menu_image{
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.menu .menu_box .menu_card .menu_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.menu .menu_box .menu_card .menu_image:hover img{
+    transform: scale(1.1);
+}
+
+.menu .menu_box .menu_card .small_card {
+    width: 45px; 
+    height: 45px;
+    float: right;
+    position: relative;
+    top: -240px;
+    right: -8px;
+    opacity: 0;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.menu .menu_box .menu_card:hover .small_card{
+    position: relative;
+    top: -240px;
+    right: 5px;
+    opacity: 1;
+
+
+}
+
+.menu .menu_box .menu_card .small_card i {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    color: black;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+
+.menu .menu_box .menu_card .small_card i:hover{
+    color: #fac031;
+    text-shadow: 0 0 4px #a35c00;
+
+}
+
+.menu .menu_box .menu_card .menu_info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 25px;
+    color: #ffab0f;
+    font-family: 'Montserrat';
+}
+
+.menu .menu_box .menu_card .menu_info p {
+    text-align: center;
+    margin-top: 8px;
+    color: #095f15;
+    line-height: 23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu .menu_box .menu_card .menu_info h3 {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.menu .menu_box .menu_card .menu_info .menu_icon {
+    color: #fac031;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.menu .menu_box .menu_card .menu_info .menu_btn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    color: #fff;
+    background: #000;
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 0.3s ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menu .menu_box .menu_card .menu_info .menu_btn:hover {
+    transform: scale(1.1)
+}
+
+.menu .menu_box .menu_card .menu_info .menu_btn:active{
+    background-color: #303030;
+
+}
+
+
+.menu {
+    width: 100%;
+    padding: 70px 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(255, 201, 25));
+}
+
+footer {
+    background-color: #3d3d3d;
+    height: 300px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+footer i {
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    margin: 0 20px; 
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer i:hover {
+    color: #fac031;
+    
+}
+
+footer i:active {
+    color: #e7e300;
+}
+
+footer p {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    font-family: 'Montserrat';
+}
+.foter{
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+}
+.text {
+    position: relative;
+    bottom: 40px;
+    color: #fff;
+}
+.teks2 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+    top: 30px;
+    color: #ffab0f;
+}
+
+.akhir {
+    background-color: #252525;
+    height: 40px;
+}
+
+.okegas{
+    color: #fff;
+    font-size: 13px;
+}
+
+.oke1{
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.oke1:hover {
+    color: #fff;
+}
+
+.oke2{
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.oke2:hover {
+    color: #fff;
+}
+
+.oke3{
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.oke3:hover {
+    color: #fff;
+}
+
+/* Base Styles */
+body {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* General Adjustments */
+    section nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    section nav .logo img {
+        width: 50px;
+        margin-bottom: 10px;
+    }
+
+    section nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section nav ul li {
+        margin: 10px 0;
+    }
+
+    section nav ul li a {
+        font-size: 16px;
+    }
+
+    section nav .icon i {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    section .main {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    section .main .men_text h1 {
+        font-size: 45px;
+        top: 0;
+        left: 0;
+        margin-bottom: 20px;
+    }
+
+    section p {
+        width: 90%;
+        left: 0;
+        bottom: 0;
+        margin: 20px auto;
+        font-size: 16px;
+    }
+
+    section .main-btn {
+        left: 0;
+        bottom: 0;
+        margin: 20px auto;
+    }
+
+    /* About Section */
+    .about {
+        padding: 50px 0;
+        height: auto;
+    }
+
+    .about .about_main {
+        flex-direction: column;
+    }
+
+    .about .about_main .image img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about .about_main .about_text h1 {
+        font-size: 40px;
+        bottom: 0;
+        text-align: center;
+    }
+
+    .about .about_main .about_text p {
+        width: 90%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .about .about_btn {
+        left: 0;
+        margin: 20px auto;
+    }
+
+    /* Menu Section */
+    .menu h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .menu .menu_box {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .menu .menu_box .menu_card {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .menu .menu_box .menu_card .menu_image {
+        width: 100%;
+        height: auto;
+    }
+
+    .menu .menu_box .menu_card .menu_info h2 {
+        font-size: 22px;
+    }
+
+    .menu .menu_box .menu_card .menu_info p {
+        font-size: 14px;
+    }
+
+    .menu .menu_box .menu_card .menu_info .menu_btn {
+        margin: 0 50px;
+    }
+
+    .menu .menu_box .menu_card .small_card {
+        width: 35px;
+        height: 35px;
+        top: -230px;
+        right: -10px;
+    }
+
+    .menu .menu_box .menu_card .small_card i {
+        font-size: 20px;
+    }
+
+    /* Footer */
+
+}
+
+/* Extra Small Devices (up to 480px) */
+@media only screen and (max-width: 480px) {
+    section nav {
+        padding: 15px;
+    }
+
+    section nav .logo img {
+        width: 40px;
+    }
+
+    section nav ul li a {
+        font-size: 14px;
+    }
+
+    section .main .men_text h1 {
+        font-size: 35px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+
+    section .main-btn {
+        width: 120px;
+        padding: 10px;
+    }
+
+    .about .about_main .about_text h1 {
+        font-size: 30px;
+    }
+
+    .about .about_main .about_text h3 {
+        font-size: 20px;
+    }
+
+    .about .about_main .about_text p {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .menu h1 {
+        font-size: 35px;
+    }
+
+    .menu .menu_box .menu_card .menu_info h2 {
+        font-size: 18px;
+    }
+
+    .menu .menu_box .menu_card .menu_info p {
+        font-size: 12px;
+    }
+
+    footer i {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    section nav {
+        flex-direction: column;
+        height: auto;
+        padding: 5px 0;
+    }
+
+    section nav .logo img {
+        width: 45px;
+        margin-bottom: 5px;
+    }
+
+    section nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    section nav ul li {
+        margin: 0 10px;
+    }
+
+    section nav ul li a {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    section nav .icon i {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+}
+
+footer {
+    background-color: #3d3d3d;
+    padding: 20px; /* Added padding to prevent content from touching the edges */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+
+footer i {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    margin: 10px 0; 
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer p {
+    font-family: 'Montserrat';
+    color: #fff;
+    margin-top: 10px;
+    font-size: 14px;
+    max-width: 100%; /* Ensure the text doesn't exceed the width */
+    word-wrap: break-word; /* Break long words to avoid overflow */
+}
+
+.akhir {
+    background-color: #252525;
+    padding: 10px;
+    text-align: center;
+}
+
+.okegas {
+    color: #fff;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 480px) {
+    footer {
+        padding: 15px; /* Additional padding for small screens */
+    }
+
+    footer i {
+        font-size: 30px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
